@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-v1",
+  "name": "mehedi-hasan",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -24,5 +24,22 @@
     "tailwindcss": "^3.4.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
-  }
+  },
+  "description": "This is portfolio-v1 of Mehedi Hasan.",
+  "keywords": [
+    "mehedi",
+    "hasan",
+    "portfolio",
+    "portfolio-v1",
+    "v1",
+    "awesome",
+    "cool",
+    "mern",
+    "web",
+    "developer",
+    "dhaka",
+    "bangladesh"
+  ],
+  "author": "Mehedi Hasan",
+  "license": "ISC"
 }
