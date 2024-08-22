@@ -65,10 +65,10 @@ const TOOLS: Skill[] = [
 ];
 
 const SKILLS_CATEGORIES: SkillsCategory[] = [
-  { value: "languages", label: "Languages", skills: LANGUAGES },
-  { value: "frontend", label: "Frontend", skills: FRONTEND_SKILLS },
-  { value: "backend", label: "Backend", skills: BACKEND_SKILLS },
-  { value: "tools", label: "Tools", skills: TOOLS },
+  { key: "languages", title: "Languages", skills: LANGUAGES },
+  { key: "frontend", title: "Frontend", skills: FRONTEND_SKILLS },
+  { key: "backend", title: "Backend", skills: BACKEND_SKILLS },
+  { key: "tools", title: "Tools", skills: TOOLS },
 ];
 
 export { SKILLS_CATEGORIES };

@@ -1,39 +1,36 @@
 "use client";
 
 import { Tooltip } from "@/components/ui/tooltip";
+import { SKILLS_CATEGORIES } from "@/data/skills";
+import { Skill, SkillsCategory } from "@/types/skill";
 import { Card, CardBody, Tabs, Tab } from "@nextui-org/react";
 
 export function Skills() {
   return (
-    <div className="flex flex-col px-4 border border-green-500 h-[1000px]">
-      <div className="flex size-full flex-col  border border-red-400">
-        <Tabs
-          aria-label="Options"
-          isVertical
-          className="border border-blue-400"
-        >
-          <Tab key="photos" title="Photos" className="border">
-            <Card className="p-40">
-              <CardBody>
-                <Tooltip id={1} name="Test" image="/images/logo.png" />
-                <Tooltip id={1} name="Test" image="/images/logo.png" />
-                <Tooltip id={1} name="Test" image="/images/logo.png" />
-                <Tooltip id={1} name="Test" image="/images/logo.png" />
+    <section
+      id="#skills"
+      className="relative max-sm:h-[800px] sm:max-md:h-[500px] lg:h-[400px] xl:h-[300px]"
+    >
+      <h4 className="absolute top-12 tracking-wide">Skills</h4>
+
+      <Tabs
+        isVertical
+        aria-label="Skills"
+        className="pt-20"
+        defaultSelectedKey="frontend"
+      >
+        {SKILLS_CATEGORIES.map(({ key, title, skills }: SkillsCategory) => (
+          <Tab key={key} title={title} className="w-full">
+            <Card className="bg-transparent">
+              <CardBody className="flex flex-row flex-wrap gap-4 overflow-hidden pt-20">
+                {skills.map(({ name, image }: Skill, i: number) => (
+                  <Tooltip key={i} id={i} name={name} image={image} />
+                ))}
               </CardBody>
             </Card>
           </Tab>
-          <Tab key="music" title="Music">
-            <Card>
-              <CardBody></CardBody>
-            </Card>
-          </Tab>
-          <Tab key="videos" title="Videos">
-            <Card>
-              <CardBody></CardBody>
-            </Card>
-          </Tab>
-        </Tabs>
-      </div>
-    </div>
+        ))}
+      </Tabs>
+    </section>
   );
 }
