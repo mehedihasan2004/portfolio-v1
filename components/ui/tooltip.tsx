@@ -61,8 +61,7 @@ export function Tooltip({ id, name, image }: Props) {
             <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px" />
             <div className="absolute left-10 w-[40%] z-30 -bottom-px" />
             <Image
-              //   src={`/images/skills${image}`}
-              src={image}
+              src={`/images/skills${image}.png`}
               alt={name}
               height={60}
               width={60}
