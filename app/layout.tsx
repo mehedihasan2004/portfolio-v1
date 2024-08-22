@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Providers } from "./providers";
 import { Inter } from "next/font/google";
+import { StarsCanvas } from "@/components/canvas/stars-canvas";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: Props) {
           <nav>Navbar</nav>
           <main>{children}</main>
           <footer>Footer</footer>
+          <StarsCanvas />
         </Providers>
       </body>
     </html>
