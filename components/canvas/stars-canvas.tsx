@@ -30,7 +30,7 @@ function Stars(props: any) {
   );
 }
 
-export function StarCanvas() {
+export function StarsCanvas() {
   return (
     <div className="w-full h-auto fixed inset-0 z-[-1]">
       <Canvas camera={{ position: [0, 0, 1] }}>
