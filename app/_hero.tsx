@@ -28,10 +28,10 @@ export function Hero() {
         <div className="size-full flex flex-col justify-center gap-5 m-auto text-start">
           <Div
             variants={slideInFromTop}
-            className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+            className="welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
           >
             <FaWandMagicSparkles className="text-[#b49bff] mr-[10px] size-5" />
-            <h2 className="Welcome-text text-[13px]">Full Stack Developer</h2>
+            <h2 className="welcome-text text-[13px]">Full Stack Developer</h2>
           </Div>
           <Div
             variants={slideInFromLeft(0.5)}
