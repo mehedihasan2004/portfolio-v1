@@ -18,6 +18,7 @@ type Props = {
 
 export function Tooltip({ id, name, image }: Props) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   const springConfig = { stiffness: 100, damping: 5 };
   const x = useMotionValue(0);
   const rotate = useSpring(
@@ -28,18 +29,18 @@ export function Tooltip({ id, name, image }: Props) {
     useTransform(x, [-100, 100], [-50, 50]),
     springConfig
   );
-  const handleMouseMove = (event: any) => {
+  const onMouseMove = (event: any) => {
     const halfWidth = event.target.offsetWidth / 2;
     x.set(event.nativeEvent.offsetX - halfWidth);
   };
 
   return (
     <div
-      className="-mr-4  relative group"
+      className="mr-4 relative group"
       onMouseEnter={() => setHoveredIndex(id)}
       onMouseLeave={() => setHoveredIndex(null)}
     >
-      <AnimatePresence mode="popLayout">
+      <AnimatePresence mode="wait">
         {hoveredIndex === id && (
           <Div
             initial={{ opacity: 0, y: 20, scale: 0.6 }}
@@ -55,25 +56,38 @@ export function Tooltip({ id, name, image }: Props) {
               rotate: rotate,
               whiteSpace: "nowrap",
             }}
-            className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs  flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-2"
+            className="absolute -top-16 -right-4 translate-x-1/2 rounded-md bg-transparent z-50 shadow-xl col-span-1"
           >
-            <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px " />
-            <div className="absolute left-10 w-[40%] z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px " />
-            <div className="font-bold text-white relative z-30 text-base">
-              {name}
-            </div>
+            <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px" />
+            <div className="absolute left-10 w-[40%] z-30 -bottom-px" />
+            <Image
+              //   src={`/images/skills${image}`}
+              src={image}
+              alt={name}
+              height={60}
+              width={60}
+              className="relative z-[1000]"
+            />
           </Div>
         )}
       </AnimatePresence>
-
-      <Image
-        alt={name}
-        src={image}
-        width={100}
-        height={100}
-        onMouseMove={handleMouseMove}
-        className="object-cover !m-0 !p-0 object-top rounded-full h-14 w-14 border-2 group-hover:scale-105 group-hover:z-30 border-white  relative transition duration-500"
-      />
+      {/* <div
+        onMouseMove={onMouseMove}
+        className="object-cover !m-0 !p-0 object-top rounded-lg w-fit group-hover:scale-105 group-hover:z-30 relative transition duration-500 bg-transparent"
+      >
+        <p className="px-4 py-2 truncate">{name}</p>
+      </div> */}
+      <div
+        onMouseMove={onMouseMove}
+        className="relative inline-flex items-center justify-center font-bold overflow-hidden group rounded-r-md object-cover object-top rounded-lg w-fit group-hover:scale-105 group-hover:z-30 transition duration-500 bg-transparent cursor-default"
+      >
+        <span className="size-full bg-gradient-to-br from-indigo-700 via-cyan-700 to-purple-700 group-hover:from-indigo-700 group-hover:via-cyan-700 group-hover:to-purple-700 absolute group-hover:blur-3xl ease-out transition"></span>
+        <span className="relative px-6 py-2 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+          <span className="relative text-white/70 group-hover:text-white/80">
+            {name}
+          </span>
+        </span>
+      </div>
     </div>
   );
 }

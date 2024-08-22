@@ -1,5 +1,6 @@
 "use client";
 
+import { Tooltip } from "@/components/ui/tooltip";
 import { Card, CardBody, Tabs, Tab } from "@nextui-org/react";
 
 export function Skills() {
@@ -12,8 +13,13 @@ export function Skills() {
           className="border border-blue-400"
         >
           <Tab key="photos" title="Photos" className="border">
-            <Card>
-              <CardBody></CardBody>
+            <Card className="p-40">
+              <CardBody>
+                <Tooltip id={1} name="Test" image="/images/logo.png" />
+                <Tooltip id={1} name="Test" image="/images/logo.png" />
+                <Tooltip id={1} name="Test" image="/images/logo.png" />
+                <Tooltip id={1} name="Test" image="/images/logo.png" />
+              </CardBody>
             </Card>
           </Tab>
           <Tab key="music" title="Music">
