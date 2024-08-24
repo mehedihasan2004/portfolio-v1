@@ -5,8 +5,9 @@ import type { Metadata } from "next";
 import { Providers } from "./providers";
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
-import { StarsCanvas } from "@/components/canvas/stars-canvas";
 import { Leftbar } from "@/components/layout/leftbar";
+import { Rightbar } from "@/components/layout/rightbar";
+import { StarsCanvas } from "@/components/canvas/stars-canvas";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +36,7 @@ export default function RootLayout({ children }: Props) {
               <main>{children}</main>
               <footer>Footer</footer>
             </div>
-            <aside>RightBar</aside>
+            <Rightbar />
           </div>
           <StarsCanvas />
         </Providers>
