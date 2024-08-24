@@ -21,20 +21,17 @@ type Props = Readonly<{ children: ReactNode }>;
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" className="dark">
-      <body
-        className={cn(
-          inter.className,
-          "max-w-7xl mx-auto overflow-x-hidden overflow-y-scroll text-white h-full"
-        )}
-      >
+      <body className={cn(inter.className, "text-white h-full")}>
         <Providers>
           <header />
-          <div>
+          <div className="max-w-7xl mx-auto flex h-full relative">
             <Leftbar />
-            <div>
+            <div className="h-full overflow-y-scroll">
               <Navbar />
-              <main>{children}</main>
-              <footer>Footer</footer>
+              <div className="mx-[40px]">
+                <main>{children}</main>
+                <footer>Footer</footer>
+              </div>
             </div>
             <Rightbar />
           </div>
