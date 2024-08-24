@@ -22,14 +22,19 @@ export default function RootLayout({ children }: Props) {
       <body
         className={cn(
           inter.className,
-          "max-w-7xl mx-auto overflow-x-hidden overflow-y-scroll border-x text-white h-full"
+          "max-w-7xl mx-auto overflow-x-hidden overflow-y-scroll text-white h-full"
         )}
       >
         <Providers>
           <header />
-          <Navbar />
-          <main>{children}</main>
-          <footer>Footer</footer>
+          <div>
+            <div>
+              <Navbar />
+              <main>{children}</main>
+              <footer>Footer</footer>
+            </div>
+            <aside>RightBar</aside>
+          </div>
           <StarsCanvas />
         </Providers>
       </body>
