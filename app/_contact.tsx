@@ -8,13 +8,13 @@ import { EarthCanvas } from "@/components/canvas/earth-canvas";
 export function Contact() {
   return (
     <section id="#contact">
-      <h4 className="tracking-wide">Contact</h4>
+      <h4 className="tracking-wider">Let&apos;s work together</h4>
 
       <div className="max-lg:flex flex-col-reverse lg:grid grid-cols-2 gap-x-4">
         <ContactForm />
         <Div
           variants={slideIn("right", "tween", 0.2, 1)}
-          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] border"
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
         >
           <EarthCanvas />
         </Div>
