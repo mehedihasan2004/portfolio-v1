@@ -8,6 +8,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* = = = = = = = = TAILWIND = = = = = = = = */
+@layer utilities {
+  .vertical-text {
+    @apply [writing-mode:vertical-rl] rotate-180 whitespace-nowrap;
+  }
+}
+
 /* = = = = = = = = TYPOGRAPHY = = = = = = = = */
 h1 {
   @apply text-4xl font-extrabold tracking-tight lg:text-5xl;
@@ -34,6 +41,10 @@ h6 {
 }
 
 p {
+  @apply text-sm font-normal tracking-normal;
+}
+
+a {
   @apply text-sm font-normal tracking-normal;
 }
 
