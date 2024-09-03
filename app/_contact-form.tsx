@@ -3,9 +3,9 @@ import { Textarea } from "@nextui-org/react";
 
 export function ContactForm() {
   return (
-    <div className="">
+    <div className="border my-auto">
       <h4>Let&apos;s work together</h4>
-      <div className="lg:flex items-center h-full">
+      <div>
         <form action="" className="space-y-4 w-full">
           <Input type="name" variant="underlined" label="Your name" />
           <Input type="email" variant="underlined" label="Your email" />

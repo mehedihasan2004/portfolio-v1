@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Props) {
           <header />
           <div className="max-w-7xl mx-auto flex h-full relative">
             <Leftbar />
-            <div className="h-full overflow-y-scroll">
+            <div className="h-full">
               <Navbar />
               <div className="mx-[40px]">
                 <main>{children}</main>
