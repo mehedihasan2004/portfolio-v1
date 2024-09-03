@@ -2,7 +2,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Div } from "@/lib/motion";
 import { ReactNode, useRef, useState } from "react";
-// import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
+import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   useSpring,
   MotionValue,
@@ -54,8 +54,7 @@ function FloatingDockMobile({ items, className }: FloatingDockMobileProps) {
         onClick={() => setOpen(!open)}
         className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
       >
-        {/* <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" /> */}
-        Click me
+        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
       </button>
     </div>
   );
