@@ -23,7 +23,7 @@ export function Hero() {
       <Div
         initial="hidden"
         animate="visible"
-        className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+        className="flex flex-row items-center justify-center mt-40 w-full z-[20]"
       >
         <div className="size-full flex flex-col justify-center gap-5 m-auto text-start">
           <Div

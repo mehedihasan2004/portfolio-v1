@@ -25,10 +25,10 @@ export default function RootLayout({ children }: Props) {
       <body className={cn(inter.className, "text-white h-full")}>
         <Providers>
           <header />
-          <div className="max-w-7xl mx-auto flex h-full relative">
+          <div className="max-w-[1444px] mx-auto flex h-full relative border border-sky-400">
+            <Navbar />
             <Leftbar />
-            <div className="h-full">
-              <Navbar />
+            <div className="h-full border border-red-400 mx-24 px-4">
               <div className="mx-[40px]">
                 <main>{children}</main>
                 <Footer />
