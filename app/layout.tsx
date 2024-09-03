@@ -8,6 +8,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Leftbar } from "@/components/layout/leftbar";
 import { Rightbar } from "@/components/layout/rightbar";
 import { StarsCanvas } from "@/components/canvas/stars-canvas";
+import { Footer } from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +31,7 @@ export default function RootLayout({ children }: Props) {
               <Navbar />
               <div className="mx-[40px]">
                 <main>{children}</main>
-                <footer>Footer</footer>
+                <Footer />
               </div>
             </div>
             <Rightbar />

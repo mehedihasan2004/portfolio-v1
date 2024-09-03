@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
@@ -9,7 +11,7 @@ import {
   IconBrandGithub,
 } from "@tabler/icons-react";
 
-export function FloatingDockDemo() {
+export function FooterSocialIcons() {
   const links = [
     {
       title: "Home",
@@ -37,7 +39,7 @@ export function FloatingDockDemo() {
       title: "Aceternity UI",
       icon: (
         <Image
-          src="https://assets.aceternity.com/logo-dark.png"
+          src="/images/logo.png"
           width={20}
           height={20}
           alt="Aceternity Logo"
@@ -68,8 +70,9 @@ export function FloatingDockDemo() {
       href: "#",
     },
   ];
+
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="flex items-center justify-center w-full">
       <FloatingDock mobileClassName="translate-y-20" items={links} />
     </div>
   );
