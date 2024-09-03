@@ -70,12 +70,7 @@ export function Tooltip({ id, name, image }: Props) {
           </Div>
         )}
       </AnimatePresence>
-      {/* <div
-        onMouseMove={onMouseMove}
-        className="object-cover !m-0 !p-0 object-top rounded-lg w-fit group-hover:scale-105 group-hover:z-30 relative transition duration-500 bg-transparent"
-      >
-        <p className="px-4 py-2 truncate">{name}</p>
-      </div> */}
+
       <div
         onMouseMove={onMouseMove}
         className="relative inline-flex items-center justify-center font-bold overflow-hidden group rounded-r-md object-cover object-top rounded-lg w-fit group-hover:scale-105 group-hover:z-30 transition duration-500 bg-transparent cursor-default"
