@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Div } from "@/lib/motion";
 import { AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
+import { Resume } from "./resume";
 
 const items = [
   { label: "About", href: "#about" },
@@ -63,7 +64,7 @@ export function Navbar() {
             ))}
           </div>
         </div>
-        <button>Resume Button</button>
+        <Resume />
       </Div>
     </AnimatePresence>
   );

@@ -8,6 +8,7 @@ import {
   slideInFromLeft,
   slideInFromRight,
 } from "@/lib/motion-animations";
+import { NeuButton } from "@/components/ui/neu-button";
 
 export function Hero() {
   return (
@@ -53,11 +54,8 @@ export function Hero() {
             I&apos;m a self taught Full Stack Developer with experience in
             Website development. Check out my projects and skills.
           </P>
-          <A
-            variants={slideInFromLeft(1)}
-            className="button-primary py-2 text-center text-white cursor-pointer rounded-lg max-w-[150px]"
-          >
-            Learn More!
+          <A variants={slideInFromLeft(1)}>
+            <NeuButton text="Hire me" />
           </A>
         </div>
         <Div

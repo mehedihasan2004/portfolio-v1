@@ -1,5 +1,5 @@
-import { Textarea } from "@nextui-org/react";
-import { Button, Input } from "@nextui-org/react";
+import { Input, Textarea } from "@nextui-org/react";
+import { NeuButton } from "@/components/ui/neu-button";
 
 export function ContactForm() {
   return (
@@ -10,14 +10,11 @@ export function ContactForm() {
 
         <Textarea
           variant="underlined"
-          label="Message"
           labelPlacement="outside"
           placeholder="Enter your message"
           className="col-span-12 md:col-span-6 mb-6 md:mb-0"
         />
-        <Button type="submit" variant="ghost" className="w-full rounded-none">
-          Send
-        </Button>
+        <NeuButton text="Send" type="submit" className="w-full" />
       </form>
     </div>
   );
