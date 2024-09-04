@@ -1,5 +1,7 @@
-type Skill = { name: string; image: string };
+export type Skill = { name: string; image: string };
 
-type SkillsCategory = { key: string; title: string; skills: Skill[] };
-
-export type { Skill, SkillsCategory };
+export type SkillsCategory = {
+  key: string;
+  title: { icon: any; label: string };
+  skills: Skill[];
+};

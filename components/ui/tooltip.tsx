@@ -36,7 +36,7 @@ export function Tooltip({ id, name, image }: Props) {
 
   return (
     <div
-      className="mr-4 relative group"
+      className="mr-4 relative group z-[1000000]"
       onMouseEnter={() => setHoveredIndex(id)}
       onMouseLeave={() => setHoveredIndex(null)}
     >
@@ -75,8 +75,7 @@ export function Tooltip({ id, name, image }: Props) {
         onMouseMove={onMouseMove}
         className="relative inline-flex items-center justify-center font-bold overflow-hidden group rounded-r-md object-cover object-top rounded-lg w-fit group-hover:scale-105 group-hover:z-30 transition duration-500 bg-transparent cursor-default"
       >
-        <span className="size-full bg-gradient-to-br from-indigo-700 via-cyan-700 to-purple-700 group-hover:from-indigo-700 group-hover:via-cyan-700 group-hover:to-purple-700 absolute group-hover:blur-3xl ease-out transition"></span>
-        <span className="relative px-6 py-2 transition-all ease-out bg-gray-900 rounded-md group-hover:bg-opacity-0 duration-400">
+        <span className="relative px-6 py-2 transition-all ease-in-out rounded-md group-hover:bg-opacity-0 duration-400">
           <span className="relative text-white/70 group-hover:text-white/80">
             {name}
           </span>
