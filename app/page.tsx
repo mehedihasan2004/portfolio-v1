@@ -4,7 +4,7 @@ import { Contact } from "./_contact";
 
 export default function Home() {
   return (
-    <div>
+    <div className="space-y-40">
       <Hero />
       <Skills />
       <Contact />

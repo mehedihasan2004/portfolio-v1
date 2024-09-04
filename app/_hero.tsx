@@ -24,35 +24,29 @@ export function Hero() {
       <Div
         initial="hidden"
         animate="visible"
-        className="flex flex-row items-center justify-center mt-40 w-full z-[20]"
+        className="lg:grid grid-cols-2 gap-x-2 mt-20 w-full z-[20] border border-red-400"
       >
-        <div className="size-full flex flex-col justify-center gap-5 m-auto text-start">
-          <Div
-            variants={slideInFromTop}
-            className="welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
-          >
-            <FaWandMagicSparkles className="text-[#b49bff] mr-[10px] size-5" />
-            <h2 className="welcome-text text-[13px]">Full Stack Developer</h2>
-          </Div>
+        <div className="my-auto">
           <Div
             variants={slideInFromLeft(0.5)}
-            className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] size-auto"
+            className="flex flex-col gap-4 mt-6 text-6xl font-bold text-white max-w-[600px] size-auto"
           >
-            <span>
-              Providing
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                {" "}
-                the best{" "}
-              </span>
-              project experience.
-            </span>
+            <p className="tracking-widest bg-gradient-to-br from-[#05EBFB] via-[#38BCF9] to-[#4DAFFF] bg-clip-text text-transparent">
+              Hi, my name is
+            </p>
+            <h2 className="tracking-wide text-5xl font-bold text-balance text-[#CCD6F6]">
+              Mehedi Hasan
+            </h2>
+            <h2 className="tracking-wide text-5xl font-bold text-balance text-[#8892B0]">
+              I love to build things for web.
+            </h2>
           </Div>
           <P
             variants={slideInFromLeft(0.8)}
-            className="text-lg text-gray-400 my-5 max-w-[600px]"
+            className="text-lg text-[#8892B0] my-5 max-w-[600px] text-balance"
           >
-            I&apos;m a self taught Full Stack Developer with experience in
-            Website development. Check out my projects and skills.
+            I&apos;m a self taught <strong>Full Stack Developer</strong> with
+            experience in website development. Check out my projects and skills.
           </P>
           <A variants={slideInFromLeft(1)}>
             <NeuButton text="Hire me" />
@@ -60,7 +54,7 @@ export function Hero() {
         </div>
         <Div
           variants={slideInFromRight(0.8)}
-          className="size-full flex justify-center items-center"
+          className="size-full hidden lg:flex justify-center items-center border border-violet-400"
         >
           <Image
             src="/images/mainIconsdark.svg"
