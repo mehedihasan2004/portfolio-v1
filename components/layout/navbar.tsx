@@ -41,7 +41,7 @@ export function Navbar() {
             alt="Logo"
             width={56}
             height={56}
-            className="cursor-pointer hover:animate-spin py-1 ease-out"
+            className="cursor-pointer py-1 ease-out"
           />
           <span className="text-lg font-bold ml-[2px] hidden md:block text-gray-300">
             ehedi Hasan

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const { h1, h2, h3, h4, h5, h6, p, small, a, div, span } = motion;
+const { h1, h2, h3, h4, h5, h6, p, small, a, div, span, button } = motion;
 
 export {
   p as P,
@@ -14,4 +14,5 @@ export {
   div as Div,
   span as Span,
   small as Small,
+  button as Button,
 };
