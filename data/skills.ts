@@ -32,7 +32,7 @@ const FRONTEND_SKILLS: Skill[] = [
   { name: "Ant Design", image: "/frontend/antd" },
   { name: "Tailwind Css", image: "/frontend/tailwind" },
   { name: "NextUI", image: "/frontend/next-ui" },
-  { name: "ShadCn UI", image: "/frontend/shadcn" },
+  { name: "Shadcn UI", image: "/frontend/shadcn" },
 ];
 
 const BACKEND_SKILLS: Skill[] = [
