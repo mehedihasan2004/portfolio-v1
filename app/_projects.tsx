@@ -1,11 +1,15 @@
+"use client";
+
+import { BackgroundGradient } from "@/components/ui/background-gradient";
+
 export function Projects() {
   return (
     <section>
       <h4>Some noteworthy projects</h4>
 
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
+      <BackgroundGradient className="bg-black rounded-md">
+        Project 1
+      </BackgroundGradient>
     </section>
   );
 }
