@@ -2,17 +2,12 @@
 
 import Image from "next/image";
 import { Card } from "@nextui-org/react";
+import { Project } from "@/types/projects";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { BackgroundGradient } from "./ui/background-gradient";
 
-type Props = {
-  image: string;
-  title: string;
-  description: string;
-  liveUrl: string;
-  githubLinks: string[];
-};
+type Props = Project;
 
 export function ProjectCard({
   image,
