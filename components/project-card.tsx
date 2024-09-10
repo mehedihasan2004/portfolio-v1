@@ -17,10 +17,10 @@ export function ProjectCard({
   githubLinks,
 }: Props) {
   return (
-    <div className="max-w-[500px]">
+    <div className="max-w-[480px]">
       <BackgroundGradient className="bg-black rounded-md">
-        <Card className="p-4 rounded-sm space-y-6">
-          <figure className="relative h-[220px] w-full overflow-hidden rounded-sm">
+        <Card className="p-4 rounded-sm space-y-6 h-[490px]">
+          <figure className="relative h-[240px] w-full overflow-hidden rounded-sm">
             <Image
               src={image}
               alt={title}
@@ -34,6 +34,7 @@ export function ProjectCard({
               {description}
             </p>
           </div>
+
           <div className="flex items-center justify-end">
             <div className="flex items-center justify-center gap-x-4">
               {githubLinks.length === 1 ? (

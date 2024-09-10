@@ -1,6 +1,6 @@
 import { Project } from "@/types/projects";
 
-export const projects = [
+export const PROJECTS = [
   {
     image: "/images/projects/pulse.png",
     title: "Pulse",
@@ -19,12 +19,5 @@ export const projects = [
       "https://github.com/mehedihasan2004/pure-plus-web-frontend",
       "https://github.com/mehedihasan2004/pure-plus-main-backend",
     ],
-  },
-  {
-    image: "",
-    title: "",
-    description: "",
-    liveUrl: "",
-    githubLinks: [""],
   },
 ] satisfies Project[];
