@@ -22,7 +22,9 @@ type Props = Readonly<{ children: ReactNode }>;
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en" className="dark">
-      <body className={cn(inter.className, "text-white h-full")}>
+      <body
+        className={cn(inter.className, "text-white h-full overflow-x-hidden")}
+      >
         <Providers>
           <header />
           <div className="max-w-[1444px] mx-auto flex h-full relative border border-sky-400">
