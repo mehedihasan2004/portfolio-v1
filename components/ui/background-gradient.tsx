@@ -1,11 +1,12 @@
 import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
-import { motion } from "framer-motion";
+import { Div } from "@/lib/motion";
 
 type Props = {
   children?: ReactNode;
   className?: string;
   containerClassName?: string;
+  motionDivClassName?: string;
   animate?: boolean;
 };
 
@@ -13,6 +14,7 @@ export const BackgroundGradient = ({
   children,
   className,
   containerClassName,
+  motionDivClassName,
   animate = true,
 }: Props) => {
   const variants = {
@@ -20,8 +22,8 @@ export const BackgroundGradient = ({
     animate: { backgroundPosition: ["0, 50%", "100% 50%", "0 50%"] },
   };
   return (
-    <div className={cn("relative p-[4px] group", containerClassName)}>
-      <motion.div
+    <div className={cn("relative p-1 group", containerClassName)}>
+      <Div
         variants={animate ? variants : undefined}
         initial={animate ? "initial" : undefined}
         animate={animate ? "animate" : undefined}
@@ -36,11 +38,11 @@ export const BackgroundGradient = ({
         }
         style={{ backgroundSize: animate ? "400% 400%" : undefined }}
         className={cn(
-          "absolute inset-0 rounded-md z-[1] opacity-60 group-hover:opacity-100 blur-xl  transition duration-500 will-change-transform",
-          " bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]"
+          "absolute inset-0 rounded-md z-[1] opacity-60 group-hover:opacity-100 blur-xl transition duration-500 will-change-transform bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]",
+          motionDivClassName
         )}
       />
-      <motion.div
+      <Div
         variants={animate ? variants : undefined}
         initial={animate ? "initial" : undefined}
         animate={animate ? "animate" : undefined}
@@ -55,8 +57,8 @@ export const BackgroundGradient = ({
         }
         style={{ backgroundSize: animate ? "400% 400%" : undefined }}
         className={cn(
-          "absolute inset-0 rounded-md z-[1] will-change-transform",
-          "bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]"
+          "absolute inset-0 rounded-md z-[1] will-change-transform bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]",
+          motionDivClassName
         )}
       />
 

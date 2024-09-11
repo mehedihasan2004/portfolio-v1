@@ -3,22 +3,20 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { Chip } from "@nextui-org/react";
 import { useEffect, useRef, useState } from "react";
+import { BackgroundGradient } from "./background-gradient";
 
 type Props = {
-  items: {
-    quote: string;
-    name: string;
-    title: string;
-  }[];
+  technologies: string[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
 };
 
-export function InfiniteMovingCards({
-  items,
+export function InfiniteMoving({
+  technologies,
   direction = "left",
   speed = "fast",
   pauseOnHover = true,
@@ -82,45 +80,30 @@ export function InfiniteMovingCards({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
       <ul
         ref={scrollerRef}
-        className={cn("flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap", {
+        className={cn("flex shrink-0 gap-8 flex-nowrap", {
           "animate-scroll": start,
           "hover:[animation-play-state:paused]": pauseOnHover,
         })}
       >
-        {items.map((item) => (
-          <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
-            style={{
-              background:
-                "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-            }}
-            key={item.name}
-          >
-            <blockquote>
-              <div
-                aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-              ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.name}
-                  </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
-                  </span>
-                </span>
-              </div>
-            </blockquote>
+        {technologies.map((technology) => (
+          <li key={technology}>
+            <BackgroundGradient
+              containerClassName="p-[1px]"
+              motionDivClassName="rounded-full"
+            >
+              <Chip
+                color="primary"
+                className="bg-black font-extralight tracking-widest text-primary-foreground/60 rounded-full"
+              >
+                {technology}
+              </Chip>
+            </BackgroundGradient>
           </li>
         ))}
       </ul>

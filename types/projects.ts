@@ -4,4 +4,5 @@ export type Project = {
   description: string;
   liveUrl: string;
   githubLinks: string[];
+  technologies: string[];
 };
