@@ -11,7 +11,7 @@ export function Rightbar() {
           >
             {myEmail}
           </a>
-          <div className="h-[100px] w-[1px] bg-white" />
+          <div className="h-[100px] w-[1px] bg-white/60" />
         </div>
       </div>
     </aside>
