@@ -7,7 +7,7 @@ import { EarthCanvas } from "@/components/canvas/earth-canvas";
 
 export function Contact() {
   return (
-    <section id="#contact">
+    <section id="contact">
       <h4 className="tracking-wider">Let&apos;s work together</h4>
 
       <div className="max-lg:flex flex-col-reverse lg:grid grid-cols-2 gap-x-4">

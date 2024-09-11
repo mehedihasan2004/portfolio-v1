@@ -4,7 +4,7 @@ import { ProjectCard } from "@/components/project-card";
 
 export function Projects() {
   return (
-    <section>
+    <section id="projects">
       <h4>Some noteworthy projects</h4>
 
       <div className="flex flex-col lg:flex-row lg:justify-center gap-10">

@@ -7,7 +7,7 @@ import { Card, CardBody, Tabs, Tab } from "@nextui-org/react";
 
 export function Skills() {
   return (
-    <section id="#skills">
+    <section id="skills">
       <h4 className="tracking-wide">Skills</h4>
 
       <Tabs aria-label="Skills" defaultSelectedKey="frontend">

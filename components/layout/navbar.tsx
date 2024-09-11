@@ -34,7 +34,7 @@ export function Navbar() {
         initial={{ opacity: 1, y: -100 }}
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.2 }}
-        className="flex fixed mx-auto z-[500] items-center justify-between space-x-4 max-w-[1444px] w-full top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md border"
+        className="flex fixed mx-auto z-[500000] items-center justify-between space-x-4 max-w-[1444px] w-full top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md border"
       >
         <a href="#hero" className="flex flex-row items-end justify-start">
           <Image

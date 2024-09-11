@@ -2,17 +2,12 @@
 
 import Image from "next/image";
 import { A, Div, P } from "@/lib/motion";
-import { FaWandMagicSparkles } from "react-icons/fa6";
-import {
-  slideInFromTop,
-  slideInFromLeft,
-  slideInFromRight,
-} from "@/lib/motion-animations";
 import { NeuButton } from "@/components/ui/neu-button";
+import { slideInFromLeft, slideInFromRight } from "@/lib/motion-animations";
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col size-full">
+    <section id="hero" className="relative flex flex-col size-full">
       <video
         autoPlay
         muted
@@ -43,12 +38,12 @@ export function Hero() {
           </Div>
           <P
             variants={slideInFromLeft(0.8)}
-            className="text-lg text-[#8892B0] my-5 max-w-[600px] text-balance"
+            className="text-lg text-[#8892B0] my-5 max-w-[600px] text-balance tracking-wide"
           >
             I&apos;m a self taught <strong>Full Stack Developer</strong> with
             experience in website development. Check out my projects and skills.
           </P>
-          <A variants={slideInFromLeft(1)}>
+          <A variants={slideInFromLeft(1)} href="#contact">
             <NeuButton text="Hire me" />
           </A>
         </div>
