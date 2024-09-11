@@ -1,3 +1,4 @@
+import { FAQ } from "./_faq";
 import { Hero } from "./_hero";
 import { Skills } from "./_skills";
 import { Contact } from "./_contact";
@@ -10,6 +11,7 @@ export default function Home() {
       <Skills />
       <Contact />
       <Projects />
+      <FAQ />
     </div>
   );
 }
