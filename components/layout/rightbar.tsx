@@ -7,7 +7,7 @@ export function Rightbar() {
         <div className="flex flex-col justify-end items-center gap-y-4">
           <a
             href={"mailto:" + myEmail}
-            className="vertical-text ease-in-out transition duration-300 hover:text-cyan-400 cursor-pointer"
+            className="vertical-text ease-in-out transition duration-300 hover:text-cyan-400 cursor-pointer tracking-widest font-extralight"
           >
             {myEmail}
           </a>
