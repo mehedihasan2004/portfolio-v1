@@ -1,4 +1,4 @@
-import { PROJECTS } from "@/lib/projects";
+import { PROJECTS } from "@/data/projects";
 import { Project } from "@/types/projects";
 import { ProjectCard } from "@/components/project-card";
 

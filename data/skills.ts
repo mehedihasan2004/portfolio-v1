@@ -21,6 +21,7 @@ const FRONTEND_SKILLS: Skill[] = [
   { name: "Typescript", image: "/common/ts" },
   { name: "React Js", image: "/frontend/react" },
   { name: "Next Js", image: "/frontend/next" },
+  { name: "Stripe", image: "/frontend/" },
   { name: "Firebase Auth", image: "/common/firebase" },
   { name: "Next Auth", image: "/frontend/nextauth" },
   { name: "Redux & RTK Query", image: "/frontend/redux" },
@@ -40,10 +41,13 @@ const BACKEND_SKILLS: Skill[] = [
   { name: "Typescript", image: "/common/ts" },
   { name: "Node Js", image: "/backend/node" },
   { name: "Express Js", image: "/backend/express" },
+  { name: "SQL", image: "/backend/" },
+  { name: "No SQL", image: "/backend/" },
   { name: "MongoDB", image: "/backend/mongodb" },
   { name: "Mongoose", image: "/backend/mongoose" },
   { name: "PostgreSQL", image: "/backend/postgres" },
   { name: "Prisma", image: "/backend/prisma" },
+  { name: "REST API", image: "/backend/" },
   { name: "Zod", image: "/backend/zod" },
   { name: "JWT", image: "/backend/jwt" },
   { name: "Bcrypt", image: "/backend/bcrypt" },
@@ -66,6 +70,10 @@ const TOOLS: Skill[] = [
   { name: "Prettier", image: "/tools/prettier" },
   { name: "ESlint", image: "/tools/eslint" },
   { name: "Husky", image: "/tools/husky" },
+  { name: "npm", image: "/tools/" },
+  { name: "pnpm", image: "/tools/" },
+  { name: "yarn", image: "/tools/" },
+  { name: "bun", image: "/tools/" },
 ];
 
 export const SKILLS_CATEGORIES: SkillsCategory[] = [
