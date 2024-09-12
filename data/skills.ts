@@ -11,7 +11,7 @@ const LANGUAGES: Skill[] = [
   { name: "C++", image: "/languages/cpp" },
   { name: "Javascript", image: "/common/js" },
   { name: "Typescript", image: "/common/ts" },
-  { name: "Rust", image: "/common/rs" },
+  { name: "Rust", image: "/languages/rs" },
 ];
 
 const FRONTEND_SKILLS: Skill[] = [
@@ -21,7 +21,7 @@ const FRONTEND_SKILLS: Skill[] = [
   { name: "Typescript", image: "/common/ts" },
   { name: "React Js", image: "/frontend/react" },
   { name: "Next Js", image: "/frontend/next" },
-  { name: "Stripe", image: "/frontend/" },
+  { name: "Stripe", image: "/frontend/stripe" },
   { name: "Firebase Auth", image: "/common/firebase" },
   { name: "Next Auth", image: "/frontend/nextauth" },
   { name: "Redux & RTK Query", image: "/frontend/redux" },
@@ -32,7 +32,7 @@ const FRONTEND_SKILLS: Skill[] = [
   { name: "Material UI", image: "/frontend/mui" },
   { name: "Ant Design", image: "/frontend/antd" },
   { name: "Tailwind Css", image: "/frontend/tailwind" },
-  { name: "NextUI", image: "/frontend/next-ui" },
+  { name: "Next UI", image: "/frontend/next-ui" },
   { name: "Shadcn UI", image: "/frontend/shadcn" },
 ];
 
@@ -70,10 +70,10 @@ const TOOLS: Skill[] = [
   { name: "Prettier", image: "/tools/prettier" },
   { name: "ESlint", image: "/tools/eslint" },
   { name: "Husky", image: "/tools/husky" },
-  { name: "npm", image: "/tools/" },
-  { name: "pnpm", image: "/tools/" },
-  { name: "yarn", image: "/tools/" },
-  { name: "bun", image: "/tools/" },
+  { name: "npm", image: "/tools/npm" },
+  { name: "pnpm", image: "/tools/pnpm" },
+  { name: "yarn", image: "/tools/yarn" },
+  { name: "bun", image: "/tools/bun" },
 ];
 
 export const SKILLS_CATEGORIES: SkillsCategory[] = [
