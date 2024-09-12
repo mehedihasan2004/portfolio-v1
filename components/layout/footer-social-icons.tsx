@@ -1,13 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import { myGithub, myTwitter } from "@/lib/constants";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconHome,
   IconBrandX,
-  IconExchange,
   IconTerminal2,
-  IconNewSection,
   IconBrandGithub,
 } from "@tabler/icons-react";
 
@@ -18,41 +17,28 @@ export function FooterSocialIcons() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#hero",
     },
 
     {
-      title: "Products",
+      title: "Projects",
       icon: (
         <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "#projects",
     },
+
     {
-      title: "Components",
-      icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Aceternity UI",
+      title: "Mehedi Hasan",
       icon: (
         <Image
           src="/images/logo.png"
           width={20}
           height={20}
-          alt="Aceternity Logo"
+          alt="Mehedi Hasan"
         />
       ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "#hero",
     },
 
     {
@@ -60,14 +46,14 @@ export function FooterSocialIcons() {
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: myTwitter,
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: myGithub,
     },
   ];
 

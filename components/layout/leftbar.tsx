@@ -4,12 +4,13 @@ import { ElementType } from "react";
 import { FaXTwitter } from "react-icons/fa6";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { LuGithub, LuInstagram } from "react-icons/lu";
+import { myGithub, myInstagram, myLinkedIn, myTwitter } from "@/lib/constants";
 
 const SOCIAL_LINKS = [
-  { icon: LuGithub, href: "https://github.com/mehedihasan2004" },
-  { icon: FaXTwitter, href: "https://x.com/__mehedihasan", iconSize: 18 },
-  { icon: LuInstagram, href: "https://instagram.com/m_h_4_u" },
-  { icon: RiLinkedinBoxFill, href: "https://www.linkedin.com/in/-mehedihasan" },
+  { icon: LuGithub, href: myGithub },
+  { icon: FaXTwitter, href: myTwitter, iconSize: 18 },
+  { icon: LuInstagram, href: myInstagram },
+  { icon: RiLinkedinBoxFill, href: myLinkedIn },
 ];
 
 type IconProps = {
@@ -33,7 +34,7 @@ function AnchorIcon({ icon: Icon, href, iconSize = 20 }: IconProps) {
 
 export function Leftbar() {
   return (
-    <aside className="w-[30px] h-full fixed top-0 left-[calc((100%-1444px)/2)] z-[300] content-end border">
+    <aside className="w-[30px] h-full hidden xl:block fixed top-0 left-[calc((100%-1444px)/2)] z-[300] content-end border">
       <div className="flex flex-col justify-end items-start">
         <div className="flex flex-col justify-end items-center gap-y-6">
           {SOCIAL_LINKS.map((props: IconProps) => (

@@ -8,6 +8,8 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 export function FAQ() {
   return (
     <section id="faq">
+      <h4 className="tracking-wider py-2">FAQs</h4>
+
       <Accordion>
         <AccordionItem
           key="education"

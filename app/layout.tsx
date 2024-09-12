@@ -5,10 +5,10 @@ import type { Metadata } from "next";
 import { Providers } from "./providers";
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import { Leftbar } from "@/components/layout/leftbar";
 import { Rightbar } from "@/components/layout/rightbar";
 import { StarsCanvas } from "@/components/canvas/stars-canvas";
-import { Footer } from "@/components/layout/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,8 +30,8 @@ export default function RootLayout({ children }: Props) {
           <div className="max-w-[1444px] mx-auto flex h-full relative border border-sky-400">
             <Navbar />
             <Leftbar />
-            <div className="h-full border border-red-400 mx-24 px-4">
-              <div className="mx-[40px]">
+            <div className="h-full border border-red-400 xl:mx-24 px-4">
+              <div className="xl:mx-10">
                 <main>{children}</main>
                 <Footer />
               </div>

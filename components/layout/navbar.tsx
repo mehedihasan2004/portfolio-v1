@@ -48,8 +48,9 @@ export function Navbar() {
             ehedi Hasan
           </span>
         </a>
-        <div className="flex flex-row items-center justify-end">
-          <div className="size-auto flex flex-row items-center justify-center gap-4 border border-[#7042f861] bg-[#0300145e] px-4 py-1 rounded-l-lg text-gray-200">
+
+        <div className="flex flex-row items-center justify-end gap-x-2">
+          <div className="size-auto hidden lg:flex flex-row items-center justify-center gap-4 border border-[#7042f861] bg-[#0300145e] px-4 py-1 rounded-l-lg text-gray-200">
             {items.map(({ label, href }, i) => (
               <a
                 href={href}
@@ -63,8 +64,8 @@ export function Navbar() {
               </a>
             ))}
           </div>
+          <Resume />
         </div>
-        <Resume />
       </Div>
     </AnimatePresence>
   );

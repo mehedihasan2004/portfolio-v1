@@ -2,7 +2,7 @@ import { myEmail } from "@/lib/constants";
 
 export function Rightbar() {
   return (
-    <aside className="w-[30px] h-full fixed top-0 right-[calc((100%-1444px)/2)] z-[300] content-end border">
+    <aside className="w-[30px] h-full hidden xl:block fixed top-0 right-[calc((100%-1444px)/2)] z-[300] content-end border">
       <div className="flex flex-col justify-end items-end">
         <div className="flex flex-col justify-end items-center gap-y-4">
           <a

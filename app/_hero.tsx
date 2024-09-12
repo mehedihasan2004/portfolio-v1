@@ -27,7 +27,7 @@ export function Hero() {
             className="flex flex-col gap-4 mt-6 text-6xl font-bold text-white max-w-[600px] size-auto"
           >
             <p className="tracking-widest bg-gradient-to-br from-[#05EBFB] via-[#38BCF9] to-[#4DAFFF] bg-clip-text text-transparent">
-              Hi, my name is
+              Hi dear, my name is
             </p>
             <h2 className="tracking-wide text-5xl font-bold text-balance text-[#CCD6F6]">
               Mehedi Hasan
