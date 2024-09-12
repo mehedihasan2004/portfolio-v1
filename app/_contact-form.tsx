@@ -4,7 +4,7 @@ import { NeuButton } from "@/components/ui/neu-button";
 export function ContactForm() {
   return (
     <div className="my-auto">
-      <form action="" className="space-y-4 w-full">
+      <form className="space-y-4 w-full">
         <Input type="name" variant="underlined" label="Your name" />
         <Input type="email" variant="underlined" label="Your email" />
 
