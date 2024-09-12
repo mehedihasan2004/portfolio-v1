@@ -3,7 +3,7 @@ import { FooterSocialIcons } from "./footer-social-icons";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col items-center py-40">
+    <footer className="flex flex-col items-center pt-40 pb-20">
       <FooterSocialIcons />
       <a
         href={myGithub}
