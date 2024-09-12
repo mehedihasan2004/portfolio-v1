@@ -23,8 +23,8 @@ export function Skills() {
               }
               className="w-full"
             >
-              <Card className="bg-transparent border">
-                <CardBody className="flex flex-row flex-wrap gap-4 overflow-hidden justify-center">
+              <Card className="bg-transparent">
+                <CardBody className="flex flex-row flex-wrap gap-4 overflow-hidden justify-evenly pt-20">
                   {skills.map(({ name, image }: Skill, i: number) => (
                     <Tooltip key={i} id={i} name={name} image={image} />
                   ))}

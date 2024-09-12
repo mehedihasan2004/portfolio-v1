@@ -19,7 +19,7 @@ export function Hero() {
       <Div
         initial="hidden"
         animate="visible"
-        className="lg:grid grid-cols-2 gap-x-2 mt-20 w-full z-[20] border border-red-400"
+        className="lg:grid grid-cols-2 gap-x-2 mt-20 w-full z-[20]"
       >
         <div className="my-auto">
           <Div
@@ -49,7 +49,7 @@ export function Hero() {
         </div>
         <Div
           variants={slideInFromRight(0.8)}
-          className="size-full hidden lg:flex justify-center items-center border border-violet-400"
+          className="size-full hidden lg:flex justify-center items-center"
         >
           <Image
             src="/images/mainIconsdark.svg"

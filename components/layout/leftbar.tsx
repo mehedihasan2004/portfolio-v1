@@ -34,7 +34,7 @@ function AnchorIcon({ icon: Icon, href, iconSize = 20 }: IconProps) {
 
 export function Leftbar() {
   return (
-    <aside className="w-[30px] h-full hidden xl:block fixed top-0 left-[calc((100%-1444px)/2)] z-[300] content-end border">
+    <aside className="w-[30px] h-full hidden xl:block fixed top-0 left-[calc((100%-1444px)/2)] z-[300] content-end">
       <div className="flex flex-col justify-end items-start">
         <div className="flex flex-col justify-end items-center gap-y-6">
           {SOCIAL_LINKS.map((props: IconProps) => (

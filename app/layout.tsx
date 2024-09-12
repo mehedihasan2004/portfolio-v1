@@ -27,10 +27,10 @@ export default function RootLayout({ children }: Props) {
       >
         <Providers>
           <header />
-          <div className="max-w-[1444px] mx-auto flex h-full relative border border-sky-400">
+          <div className="max-w-[1444px] mx-auto flex h-full relative">
             <Navbar />
             <Leftbar />
-            <div className="h-full border border-red-400 xl:mx-24 px-4">
+            <div className="h-full xl:mx-24 px-4">
               <div className="xl:mx-10">
                 <main>{children}</main>
                 <Footer />
