@@ -7,7 +7,7 @@ export function Projects() {
     <section id="projects">
       <h4>Some noteworthy projects</h4>
 
-      <div className="flex flex-col lg:flex-row lg:justify-center gap-10">
+      <div className="flex flex-col lg:flex-row lg:justify-between gap-10">
         {PROJECTS.map((props: Project) => (
           <ProjectCard key={props.image} {...props} />
         ))}

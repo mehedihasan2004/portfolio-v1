@@ -8,7 +8,7 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 export function FAQ() {
   return (
     <section id="faq">
-      <Accordion className="max-w-4xl mx-auto">
+      <Accordion>
         <AccordionItem
           key="education"
           aria-label="Education"

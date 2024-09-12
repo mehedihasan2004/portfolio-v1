@@ -20,7 +20,7 @@ export function ProjectCard({
   technologies,
 }: Props) {
   return (
-    <div className="max-w-[480px]">
+    <div className="max-w-[520px]">
       <BackgroundGradient className="bg-black rounded-md">
         <Card className="p-4 rounded-sm space-y-6 h-[540px] relative">
           <figure className="relative h-[240px] w-full overflow-hidden rounded-sm">
