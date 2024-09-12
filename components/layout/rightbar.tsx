@@ -1,4 +1,4 @@
-import { myEmail } from "@/lib/env";
+import { myEmail } from "@/lib/constants";
 
 export function Rightbar() {
   return (

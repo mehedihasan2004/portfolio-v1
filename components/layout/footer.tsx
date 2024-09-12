@@ -1,4 +1,4 @@
-import { myGithub } from "@/lib/env";
+import { myGithub } from "@/lib/constants";
 import { FooterSocialIcons } from "./footer-social-icons";
 
 export function Footer() {
